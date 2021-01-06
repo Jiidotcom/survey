@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {font-family: "poppins";
+line-height: 1.4; 
+background-color: #D0D9CD;
+width: 500px;
+margin: auto; 
+}
+form {background: rgb(150, 150, 150, 0.3);
+padding: 2.5rem 2.5rem;
+border-radius: 2rem;
+width: 500px;
+margin: auto;
+}
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: grey; 
+  color: white;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+.input-headings{
+  margin: 0 auto 1.25rem auto; 
+  padding: 0.25rem;
+}
+.form-inputs{
+  display: block;
+  width: 90%;
+  height: 2rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid #D0D9CD;
+  border-radius: 0.5rem;
+}
+  </style>
+<header>
+<h1 id="title"> Esla model purchase</h1>
+</header>
+  
+<body>  
+<p id="description"> Fill details below to complete your Esla order</p>
+
+<form id="survey-form"> 
+<div class="input-headings">
+  <label id="name-label" for="name"> Name</label>
+  <input id="name" type="text" name="name" placeholder="Elon Must" class="form-inputs" required></input>
+<br>
+
+<label id="email-label" for="email"> Email</label>
+<input id="email" type="email" name="email" placeholder="elon.must@esla.com" class="form-inputs" required></input>
+<br>
+
+<label id="number-label" for="number">Age</label>
+<input id="number" type="number" name="number" placeholder="80" min="18" max="100" class="form-inputs" required></input>
+<br>
+<br>
+
+
+<label for="dropdown" id="model"> Select model</label>
+<select id="dropdown" class="form-inputs" >
+  <br>
+  
+  <option value="potkupyora">Potkupyora</option>
+  <option value="potkukelkka">Potkukelkka</option>
+  <option value="potkulauta">Potkulauta</option>
+  <option value="koristekelkka">Koristekelkka</option> 
+  <option value="rollaattori">Rollaattori</option> 
+  <option value="keinutuoli">Keinutuoli</option>
+</select>
+<br>
+  <br>
+  <label for="model_color" id="model_color"> <b>Model color</b></label>
+  <br>
+
+
+<input id="model_color" type="radio" id="black" name="color" value="black"></input>
+
+<label for="model_color">Black</label>
+<input id="model_color" type="radio" id="white" name="color" value="white"></input>
+<label for="model_color">White</label>
+
+<input id="model_color" type="radio" id="red" name="color" value="red"></input>
+<label for="model_color">Red</label>
+
+<br>
+<br>
+
+<label for="features"> <b>Add features</b> </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<laber for="checkbox"> Full self driving autopilot - 10000€</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="all-wheel-drive">
+<laber for="checkbox"> All wheel drive - 8000€</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="turbo-charged">
+<laber for="checkbox"> Turbo-charged - 5000€</label>
+<br>
+<br>
+<label id="textarea"> Additional comments</label> 
+<br>
+<textarea id="textarea" name="instructions" rows="5" cols="40"></textarea>
+<br>
+<input id="submit" type="submit" value="place order" class="submit-button">
+</div>
+
+</form>
+
+</body>
+</html>
+
